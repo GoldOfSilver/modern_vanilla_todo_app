@@ -8,7 +8,9 @@ export default function(data) {
 			<section class="main">
 				<input id="toggle-all" class="toggle-all" type="checkbox">
 				<label for="toggle-all">Mark all as complete</label>
-				<ul class="todo-list"></ul>
+				<ul class="todo-list">
+					${data.todos.map(todo => todo.render()).join('')}
+				</ul>
 			</section>
 			<footer class="footer">
 				<span class="todo-count"></span>

@@ -1,3 +1,6 @@
+import getTemplate from './template.js';
+import './styles.scss';
+
 export default class Todo {
     constructor(data) {
         this.id = data.id;
@@ -5,9 +8,7 @@ export default class Todo {
         this.completed = data.completed;
         this.createdAt = data.createdAt;
     }
-    render(domElt) {
-        const newTodo = document.createElement("div");
-        newTodo.innerHTML = getTemplate(this);
-        domElt.append(newTodo);
+    render() {
+        return getTemplate(this);
     }
 }
