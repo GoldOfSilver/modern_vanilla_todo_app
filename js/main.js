@@ -1,5 +1,5 @@
 import '../style.scss';
-import TodoList from './components/TodoList/TodoList.js';
+import TodoList from './components/todolist/Todolist.js';
 
 // instancier une nouvelle todolist
 // en lui envoyant l'élément DOM sur lequel se greffer
