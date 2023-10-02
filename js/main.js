@@ -5,7 +5,7 @@ import TodoList from './components/todolist/Todolist.js';
 // en lui envoyant l'élément DOM sur lequel se greffer
 // et l'URL de l'API à utiliser
 
-new TodoList({
+window.todoList = new TodoList({
     apiURL: "https://650449e0c8869921ae24cfd0.mockapi.io",
     domElt: "#app"
 });

@@ -1,3 +1,5 @@
+import './styles.scss';
+
 export default function(data) {
     return `
     <li data-id="${data.id}" class="${data.completed ? 'completed' : ''}">

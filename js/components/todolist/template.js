@@ -1,3 +1,4 @@
+import './styles.scss';
 export default function(data) {
     return `
     <section class="todoapp">
@@ -13,7 +14,7 @@ export default function(data) {
 				</ul>
 			</section>
 			<footer class="footer">
-				<span class="todo-count"></span>
+				<span class="todo-count"><strong></strong> item(s)</span>
 				<ul class="filters">
 					<li>
 						<a href="#/" class="selected">All</a>

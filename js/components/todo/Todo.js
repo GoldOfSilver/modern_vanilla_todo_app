@@ -1,5 +1,5 @@
 import getTemplate from './template.js';
-import './styles.scss';
+import DB from '../../DB.js';
 
 export default class Todo {
     constructor(data) {
@@ -8,6 +8,7 @@ export default class Todo {
         this.completed = data.completed;
         this.createdAt = data.createdAt;
     }
+
     render() {
         return getTemplate(this);
     }
